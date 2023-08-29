@@ -1,54 +1,66 @@
 header {
-    background:#3f75a7;
-    width:1440px; margin:0 auto;
+    background:#3f75a7; 
+}
+header .top {
+    max-width:1440px;  margin:0 auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 30px;
-    position: relative;
+    position:relative;
 }
 header h1 {}
 header h1 a {}
 header h1 a img {}
 header nav {
+
 }
 header nav > ul {
     display:flex;
+    
 }
 header nav > ul > li {
     padding-right:50px;
     text-align: center;
 }
+header nav > ul > li:last-child {padding:0;}
 header nav > ul > li > a {
     /* background:lightsalmon; */
 }
-header nav > ul > li > a > img {width:100%;}
-header nav .sub_box .sub {
-    background:rgba(33, 86, 134, 0.7);
-    width:1440px;
-    text-align: center;
+header nav > ul > li > a > img {}
+header nav > ul > li .sub_box {
+    padding-top:57px;
     position:absolute;
     z-index:100;
-    left:0; top:141px;
+    left:0;
+
+}
+header nav > ul > li .sub_box .sub {
+    background:rgba(33, 86, 134, 0.3);
+    width:1440px;
+    /* padding-top:90px; */
+    /* padding-bottom:10px; */
+    text-align: center;
     display:flex;
     justify-content:center;
     padding:50px 0;
+    /* padding-top:60px; */
 }
-header nav .sub_box .sub li {
-    /* background:lightgray; */
+header nav > ul > li > .sub_box .sub li {
     display: flex;
     flex-flow:column nowrap;
     padding: 0 50px;
     border-right:1px solid rgba(250, 252 ,255, 0.2);
 }
-header nav .sub_box .sub li:last-child {border-right:none;}
-header nav .sub_box .sub li a {
+header nav > ul > li > .sub_box .sub li a {
     font-size:1.125rem;
     color:#fff;
     padding-bottom:50px;
 }
-header nav .sub_box .sub li a:last-child {padding-bottom:0;}
-header nav .sub_box .sub li a span {
+header nav > ul > li > .sub_box .sub li a:hover {
+    color:lightsalmon;
+}
+header nav > ul > li > .sub_box .sub li a span {
     font-weight:700;
     padding-bottom:10px;
     font-size:1.333rem;
@@ -65,7 +77,6 @@ main .container {
 main .container .best {
     /* background:lightblue; */
     width:calc(100% - 60px); margin:0 auto;
-    position: relative;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -73,8 +84,38 @@ main .container .best {
 }
 main .container .best .b_left {
     /* background: lightgreen; */
+    position: relative;
 }
 main .container .best .b_left h2 {}
+main .container .best .b_left p {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top:30px;
+    font-size:1.250rem;
+    font-weight: 500;
+    line-height:28px;
+    letter-spacing: -0.4px;
+}
+main .container .best .b_left p  span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:1.250rem;
+    font-weight:600;
+    color:#3f75a7;
+}
+main .container .best .b_left .swiper-button-prev {
+    background:url(../images/item_img/prev.png) no-repeat;
+    width:40px; height:40px;
+    top:200px;
+    right:20px;
+}
+main .container .best .b_left .swiper-button-next {
+    background:url(../images/item_img/next.png) no-repeat;
+    width:40px; height:40px;
+    top:200px;
+    left:120px
+}
+main .container .best .b_left .swiper-button-prev::after,
+main .container .best .b_left .swiper-button-next::after {display:none;}
+/*---*/
 main .container .best .b_right {
     /* background:lightcoral; */
 }
@@ -96,25 +137,11 @@ main .container .best .b_right #b_slide .swiper-wrapper .swiper-slide:hover {
 main .container .best .b_right #b_slide .swiper-wrapper .swiper-slide img {
     
 }
-main .container .best .b_right .swiper-button-prev {
-    background:url(../images/item_img/prev.png) no-repeat;
-    width:40px; height:40px;
-    top:330px;
-    left:20px
-}
-main .container .best .b_right .swiper-button-next {
-    background:url(../images/item_img/next.png) no-repeat;
-    width:40px; height:40px;
-    top:330px;
-    left:100px;
-}
-main .container .best .b_right .swiper-button-prev::after,
-main .container .best .b_right .swiper-button-next::after {display:none;}
+
 /*-----------------------------------------------프리미엄 메뉴--------------------------*/
 main .container .premium {
     /* background:lightblue; */
     width:calc(100% - 60px); margin:0 auto;
-    position: relative;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -122,8 +149,39 @@ main .container .premium {
 }
 main .container .premium .p_right {
     /* background: lightgreen; */
+    position: relative;
 }
 main .container .premium .p_right h2 {}
+main .container .premium .p_right p {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top:30px;
+    font-size:1.250rem;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align:right;
+}
+main .container .premium .p_right p span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:1.250rem;
+    color:#3f75a7;
+    font-weight: 600;
+}
+main .container .premium .p_right .swiper-button-prev {
+    background:url(../images/item_img/prev.png) no-repeat;
+    width:40px; height:40px;
+    top:200px;
+    left:130px
+}
+main .container .premium .p_right .swiper-button-next {
+    background:url(../images/item_img/next.png) no-repeat;
+    width:40px; height:40px;
+    top:200px;
+    right:20px;
+}
+main .container .premium .p_right .swiper-button-prev::after,
+main .container .premium .p_right .swiper-button-next::after {display:none;}
+/**/
 main .container .premium .p_left {
     /* background:lightcoral; */
 }
@@ -145,17 +203,3 @@ main .container .premium .p_left #p_slide .swiper-wrapper .swiper-slide:hover {
 main .container .premium .p_left #p_slide .swiper-wrapper .swiper-slide img {
     
 }
-main .container .premium .p_left .swiper-button-prev {
-    background:url(../images/item_img/prev.png) no-repeat;
-    width:40px; height:40px;
-    top:330px;
-    right:100px
-}
-main .container .premium .p_left .swiper-button-next {
-    background:url(../images/item_img/next.png) no-repeat;
-    width:40px; height:40px;
-    top:330px;
-    right:20px;
-}
-main .container .premium .p_left .swiper-button-prev::after,
-main .container .premium .p_left .swiper-button-next::after {display:none;}

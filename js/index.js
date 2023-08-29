@@ -1,5 +1,7 @@
 const gnb = document.querySelectorAll('nav > ul > li')
-const sub = document.querySelectorAll('nav .sub_box .sub')
+// const sub = document.querySelectorAll('nav .sub_box .sub')
+const sub = document.querySelectorAll('.sub_box .sub')
+const nav = document.querySelectorAll('nav')
 const brand = document.querySelector('nav > ul > li .brand img')
 const menu = document.querySelector('nav > ul > li .menu img')
 const pop = document.querySelector('nav > ul > li .pop img')
@@ -80,8 +82,8 @@ const b_slide = new Swiper('#b_slide',{
     slidesPerView: "auto",
     spaceBetween:10,
     navigation: {//이전 다음 버튼 동작 하게 하기
-        nextEl: '.b_right .swiper-button-next',
-        prevEl: '.b_right .swiper-button-prev',
+        nextEl: '.b_left .swiper-button-next',
+        prevEl: '.b_left .swiper-button-prev',
     }
 });
 /*프리미엄 슬라이드 */
@@ -89,7 +91,7 @@ const p_slide = new Swiper('#p_slide',{
     slidesPerView: "auto",
     spaceBetween:10,
     navigation: {//이전 다음 버튼 동작 하게 하기
-        nextEl: '.p_left .swiper-button-next',
-        prevEl: '.p_left .swiper-button-prev',
+        nextEl: '.p_right .swiper-button-next',
+        prevEl: '.p_right .swiper-button-prev',
     }
 });
