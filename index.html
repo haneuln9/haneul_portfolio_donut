@@ -10,6 +10,7 @@
     <!--스타일-->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/responsive.css">
 </head>
 <body>
     <header>
@@ -196,48 +197,84 @@
                                 </li>
                             </ul>
                         </div>
-                        
                     </li>
                 </ul>
-                <!-- <div class="sub_box">
-                    <ul class="sub">
-                        <li>
-                            <a href="#"><span>BRAND</span></a>
-                            <a href="#">브랜드 스토리</a>
-                            <a href="#">브랜드 소식</a>
-                        </li>
-                        <li>
-                            <a href="#"><span>MENU</span></a>
-                            <a href="#">베스트</a>
-                            <a href="#">클래식 도넛</a>
-                            <a href="#">디럭스 도넛</a>
-                            <a href="#">펜시 도넛</a>
-                            <a href="#">프리미엄 도넛</a>
-                        </li>
-                        <li>
-                            <a href="#"><span>POP CULTURE</span></a>
-                            <a href="#">Pop Culture</a>
-                        </li>
-                        <li>
-                            <a href="#"><span>STORE</span></a>
-                            <a href="#">매장 소개</a>
-                            <a href="#">가맹점 문의</a>
-                            <a href="#">매장 찾기</a>
-                        </li>
-                        <li>
-                            <a href="#"><span>EVENT</span></a>
-                            <a href="#">진행 이벤트</a>
-                            <a href="#">종료 이벤트</a>
-                            <a href="#">당첨자 발표</a>
-                        </li>
-                    </ul>
-                </div> -->
-                </nav>
+            </nav>
+            <div class="m_nav_open">
+                <!--닫기 버튼-->
+                <button type="button" id="nav_close"><img src="" alt=""></button>
+                <ul>
+                    <li>
+                        <a href="#" class="brand"><img src="./images/nav/brand_off.png" alt=""></a>
+                        <div class="sub_box">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">브랜드 스토리</a>
+                                    <a href="#">브랜드 소식</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="menu"><img src="./images/nav/menu_off.png" alt=""></a>
+                        <div class="sub_box">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#"><span>MENU</span></a>
+                                    <a href="#">베스트</a>
+                                    <a href="#">클래식 도넛</a>
+                                    <a href="#">디럭스 도넛</a>
+                                    <a href="#">펜시 도넛</a>
+                                    <a href="#">프리미엄 도넛</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="pop"><img src="./images/nav/pop_off.png" alt=""></a>
+                        <div class="sub_box">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#"><span>POP CULTURE</span></a>
+                                    <a href="#">Pop Culture</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="store"><img src="./images/nav/store_off.png" alt=""></a>
+                        <div class="sub_box">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#"><span>STORE</span></a>
+                                    <a href="#">매장 소개</a>
+                                    <a href="#">가맹점 문의</a>
+                                    <a href="#">매장 찾기</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="event"><img src="./images/nav/event_off.png" alt=""></a>
+                        <div class="sub_box">
+                            <ul class="sub">
+                                <li>
+                                    <a href="#"><span>EVENT</span></a>
+                                    <a href="#">진행 이벤트</a>
+                                    <a href="#">종료 이벤트</a>
+                                    <a href="#">당첨자 발표</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <div class="main_banner">
-            <img src="./images/banner2.png" alt="">
+            <!-- <img src="./images/banner2.png" alt=""> -->
+            <video src="./video/donut.mp4" autoplay loop muted></video>
         </div>
         <div class="container"><!-- 도넛 아이템-->
             <div class="best">
@@ -291,9 +328,80 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-
+        </div>
+        <div class="event_page">
+            <div class="title">
+                <h2><img src="./images/main_event.png" alt=""></h2>
+            </div>
+            <div class="t_content">
+                <a href="#"><img src="./images/event_page1.png" alt=""></a>
+                <a href="#"><img src="./images/event_page2.png" alt=""></a>
+                <a href="#"><img src="./images/event_page3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="story_page">
+            <div class="story_title">
+                <p>World Famous Since 1952</p>
+                <h2><img src="./images/story.png" alt=""></h2>
+                <p><span>1952년부터 미국 로스앤젤레스의 아이콘으로 자리잡은 수제 도넛 브랜드, 랜디스도넛만의 특별함을 만나보세요.</span></p>
+            </div>
+            <div class="s_content">
+                <div class="s1">
+                    <p><img src="./images/story1_img.png" alt=""></p>
+                    <div class="s1_txt">
+                        <h2><img src="./images/story1_txt.png" alt=""></h2>
+                        <p><span>매장에서 직접</span> 만드는 <br> 
+                            신선한 도넛을 맛보기 위해 고객들은 <br>
+                            LA 잉글우드 랜디스도넛 매장 앞에 줄 서있습니다.</p>
+                    </div>
+                </div>
+                <div class="s2">
+                    <div class="s2_txt">
+                        <h2><img src="./images/story_2txt.png" alt=""></h2>
+                        <p>모든 도넛이 같은 모양이 아니라는 점은<br> 수제 도넛만의
+                            특별함 입니다.</p>
+                    </div>
+                    <p><img src="./images/story2_img.png" alt=""></p>
+                </div>
+                <div class="s3">
+                    <p><img src="./images/story3_img.png" alt=""></p>
+                    <h2>클래식 도넛부터 프리미엄 도넛까지<br>
+                        아낌없는 토핑으로 도넛의 신세계를 선사합니다.</h2>
+                </div>
+                <div class="s4">
+                    <div class="s_left">
+                        <div class="s4_txtl">
+                            <p>미국 로스앤젤레스 에 위치한 매장은<br>
+                                Pop Culture아이콘 중 하나로<br>
+                                전세계의 핫플레이스 입니다.</p>
+                        </div>
+                    </div>
+                    <div class="s_right">
+                        <div class="s4_txtr">
+                            <p>미국 최고의 맛집 평가사이트에서<br>
+                                가장 높은 평가를 받은<br>
+                                도넛 매장입니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="story_last">
+                    <h3>세계적으로 유명한 랜디스도넛의<br>
+                        특별한 맛과 문화를 한국에서도 만날 수 있습니다.</h3>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="ft">
+            <p>서울특별시 마포구 동교로 247 4층, 5층<br>
+                사업자등록번호 : 565-87-01114 <br>
+                대표 번호 : 02-6954-0621 · 대표 메일 : randysdonuts@rapport-l.com <br>
+                Copyright ⓒ 2019, Randy's Donuts. All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--스크롤 트리거-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
