@@ -4,7 +4,7 @@ header {
     position:fixed;
     /* position:relative; */
     top:0;
-    z-index:999;
+    z-index:800;
 }
 header .top {
     width:1380px; 
@@ -13,7 +13,7 @@ header .top {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 30px;
+    padding:10px 30px;
 }
 header h1 {}
 header h1 a {}
@@ -35,12 +35,12 @@ header nav > ul > li > a {
 }
 header nav > ul > li > a > img {}
 header nav > ul > li .sub_box {
+    /* background: #000; */
     width:100%;
-    padding-top:57px;
+    padding-top:47px;
     position:absolute;
     z-index:999;
     left:0;
-
 }
 header nav > ul > li .sub_box .sub {
     background:rgba(33, 86, 134, 0.3);
@@ -62,7 +62,7 @@ header nav > ul > li > .sub_box .sub li a {
     padding-bottom:50px;
 }
 header nav > ul > li > .sub_box .sub li a:hover {
-    color:lightgoldenrodyellow;
+    color:lightpink;
 }
 header nav > ul > li > .sub_box .sub li a span {
     font-weight:700;
@@ -70,13 +70,61 @@ header nav > ul > li > .sub_box .sub li a span {
     font-size:1.333rem;
 }
 /*모바일 메뉴*/
+.top .m_nav {
+    z-index:999;
+    display:none;
+} 
+header .m_nav_open {
+    position:absolute;
+    text-align: center;
+    width:100%;
+    top:122px; 
+    z-index:1000;
+    display:none;
+}
+.m_nav_open > #close {
+    background:none;
+    position: absolute;
+    right:40px; top:30px;
+}
+.m_nav_open #close img {}
+.m_nav_open > ul {
+    background:rgba(33, 86, 134, 0.9);
+}
+.m_nav_open ul li {}
+.m_nav_open ul li a {
+    
+}
+.m_nav_open ul li a img {padding:40px  0;}
+.m_nav_open ul li .sub_box2 {
+    display:none;
+    justify-content:center;
+    
+}
+.m_nav_open ul li .sub_box2 .sub2 {}
+.m_nav_open ul li .sub_box2 .sub2  li {
+    width:800px;
+    /* background:rgba(3, 6, 100, 0.1); */
+    border-bottom:1px dashed #F4F4F4;
+    border-top:1px dashed #F4F4F4;
+    padding-top:40px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+}
+.m_nav_open ul li .sub_box2 .sub2 li a {
+    font-size:1rem;
+    color:#fff;
+    padding-bottom:30px;
+}
+.m_nav_open ul li .sub_box2 .sub2 li a:hover{color:lightpink;}
 /*---------------------------------------메인------------------------------------*/
 main {
     min-width:645px;
     /* margin-top: 50px; */
 }
 main .main_banner {
-    height:50vh; 
+    height:60vh; 
     /* margin:0 auto; */
     overflow:hidden;
     position: relative;
@@ -86,7 +134,7 @@ main .main_banner video {
     width:100%; 
     /* height:100%; */
     position: absolute;
-    top:140px;
+    top:120px;
     left:50%;
     transform:translateX(-50%);
     

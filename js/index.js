@@ -1,5 +1,4 @@
 const gnb = document.querySelectorAll('nav > ul > li')
-// const sub = document.querySelectorAll('nav .sub_box .sub')
 const sub = document.querySelectorAll('.sub_box .sub')
 const nav = document.querySelectorAll('nav')
 const brand = document.querySelector('nav > ul > li .brand img')
@@ -7,10 +6,42 @@ const menu = document.querySelector('nav > ul > li .menu img')
 const pop = document.querySelector('nav > ul > li .pop img')
 const store = document.querySelector('nav > ul > li .store img')
 const event = document.querySelector('nav > ul > li .event img')
-console.log(gnb, sub, brand,menu, pop, store, event)
-//---------------------------
+console.log(gnb, sub, brand,menu, pop, store, event,)
+//데스크탑 서브 가리기
 for(let i of sub){i.style.display = 'none'}
-let if_img = false
+//모바일 
+const sub_m = document.querySelectorAll(' .sub2')
+const gnb_m = document.querySelector('.m_nav_open ')
+const m_nav = document.querySelector('.m_nav')
+const gnb_nav = document.querySelectorAll('.m_nav_open > ul > li')
+const close = document.querySelector('#close')
+console.log( sub_m, gnb_m, m_nav, gnb_nav, close)
+console.log('-----')
+//---------------------------
+//모바일 서브 가리기
+// for(let i of sub_m){i.style.display = 'none'}
+gnb_m.style.display = 'none'
+//모바일 햄버거 누르면 버튼 노출
+m_nav.addEventListener('click',function(){
+    gnb_m.style.display = 'block'
+})
+close.addEventListener('click',function(){
+    gnb_m.style.display = 'none'
+})
+//모바일 메뉴 에서 서브 노출
+for(let i of gnb_nav){
+    i.addEventListener('mouseover',function(e){
+        e.preventDefault()
+        console.log(i.lastElementChild)
+        i.lastElementChild.style.display = 'flex'
+    })
+    i.addEventListener('mouseout',function(e){
+        e.preventDefault()
+        i.lastElementChild.style.display = 'none'
+    })
+}
+
+
 //-------------브랜드-----------------
 brand.addEventListener('mouseover',function(){
     onOff(this, 'brand','on')
@@ -18,15 +49,15 @@ brand.addEventListener('mouseover',function(){
 brand.addEventListener('mouseout',function(){
     onOff(this, 'brand','off')
 })
-brand.addEventListener('click',function(e){
-    if(if_img == false){
-        brand.src = './images/nav/brand_on.png'
-        if_img = true
-    }else{
-        brand.src = './images/nav/brand_off.png'
-        if_img = false
-    }
-})
+// brand.addEventListener('click',function(e){
+//     if(if_img == false){
+//         brand.src = './images/nav/brand_on.png'
+//         if_img = true
+//     }else{
+//         brand.src = './images/nav/brand_off.png'
+//         if_img = false
+//     }
+// })
 
 //-----------------메뉴--------------------------
 menu.addEventListener('mouseover',function(e){
@@ -137,12 +168,14 @@ gsap.to(s4LpTag,{
     delay:0.5,
     // duration:2,
     x:0,
-    ease:"power2.out"
+    ease:"power2.out",
+    duration:2
 })
 gsap.to(s4RpTag,{
     scrollTrigger:s4Title,
     delay:0.5,
     // duration:2,
     x:0,
-    ease:"power2.out"
+    ease:"power2.out",
+    duration:2
 })
