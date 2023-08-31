@@ -116,6 +116,12 @@ const b_slide = new Swiper('#b_slide',{
         nextEl: '.b_left .swiper-button-next',
         prevEl: '.b_left .swiper-button-prev',
     },
+    // breakpoints:{
+    //     350:{slidesPerView:1},//700일경우 슬라이드 2개 표시
+    //     // 700:{slidesPerView:2},//700일경우 슬라이드 2개 표시
+    //     // 930:{slidesPerView:3},//700일경우 슬라이드 2개 표시\
+    //     // 1150:{slidesPerView:2},//700일경우 슬라이드 2개 표시\
+    // }
 });
 /*프리미엄 슬라이드 */
 const p_slide = new Swiper('#p_slide',{
