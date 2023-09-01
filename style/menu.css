@@ -1,0 +1,58 @@
+body {}
+h1 {
+    font-size:3.157rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:700;
+    text-align: center;
+}
+.top_nav {
+    display:flex;
+}
+.top_nav > a {
+    display:block;
+    text-align: center;
+    padding:10px 0;
+    width:150px;
+    border:1px solid #000;
+    border-radius:20px;
+    background:lightblue;
+    margin-right:20px;
+}
+.top_nav > a > p {
+    font-size:1.777rem;
+    font-weight:600;
+}
+.line {
+    padding:50px 0;
+}
+.line span {
+    display:block;
+    width:1290px;
+    height:1px;
+    background:#000;
+}
+
+.sub {
+    width:1380px;
+    text-align: center;
+    display:flex;
+    flex-flow:row wrap;
+}
+.sub  li {
+    padding: 0 20px 50px 20px ;
+}
+.sub  li .img {
+    background:#F4F4F4;
+}
+.sub  li .img img  {}
+.sub  li .item_name {
+    padding-top:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:1.333rem;
+    font-weight:700;
+}
+.sub  li .pay  {
+    padding-top:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:1.333rem;
+}

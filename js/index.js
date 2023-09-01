@@ -40,6 +40,12 @@ for(let i of gnb_nav){
         i.lastElementChild.style.display = 'none'
     })
 }
+// gnb_nav.forEach(function(t,i,a){
+//     t.addEventListener('click',function(e){
+//         e.preventDefault()
+
+//     })
+// })
 
 
 //-------------브랜드-----------------
