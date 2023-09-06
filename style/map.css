@@ -1,0 +1,45 @@
+h1 {
+    padding:100px 0;
+    font-size:3.157rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:700;
+    text-align: center;
+}
+.map_choice {
+    max-width:1380px; margin:0 auto;
+    display: flex;
+    flex-flow:row wrap;
+    text-align: center;
+}
+.map_choice .active {
+    background:#3f75a7;
+    color:#FFF;
+}
+.map_choice a {
+    width:280px;
+    border:1px solid #aaa ;
+    margin:20px 30px 0 0;
+    font-size:2rem;
+    padding:10px 20px;
+}
+.map_choice a:last-child {margin-right:0;}
+
+.line {
+    padding:50px 0;
+}
+.line span {
+    display:block;
+    width:1380px; margin:0 auto;
+    height:1px;
+    background:#000;
+}
+
+#map {
+    /* background:aqua;
+    width:700px; margin:0 auto; height:500px; */
+}
+#map .map_img {
+    width:800px; height:500px; margin:0 auto;
+    background:lightcoral;
+    margin-bottom:5px;
+}

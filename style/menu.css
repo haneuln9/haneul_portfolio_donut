@@ -1,23 +1,28 @@
-body {}
+body {max-width:1380px; margin:0 auto;}
 h1 {
     font-size:3.157rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight:700;
     text-align: center;
+    padding:100px 0;
 }
 .top_nav {
+    margin:0 auto;
     display:flex;
+    /* padding-top:50px; */
 }
 .top_nav > a {
     display:block;
     text-align: center;
     padding:10px 0;
     width:150px;
-    border:1px solid #000;
+    /* border:1px solid #000; */
     border-radius:20px;
     background:lightblue;
     margin-right:20px;
 }
+.top_nav > a:hover {background:#3f75a7;}
+.top_nav > a > p:hover {color:#fff;}
 .top_nav > a > p {
     font-size:1.777rem;
     font-weight:600;
@@ -31,28 +36,31 @@ h1 {
     height:1px;
     background:#000;
 }
-
-.sub {
+.items {
+    margin:0 auto;
+}
+.items .sub {
     width:1380px;
     text-align: center;
     display:flex;
     flex-flow:row wrap;
 }
-.sub  li {
+.items .sub  li {
     padding: 0 20px 50px 20px ;
 }
-.sub  li .img {
+.items .sub  li .img {
     background:#F4F4F4;
 }
-.sub  li .img img  {}
-.sub  li .item_name {
+.items .sub  li .img img  {}
+.items .sub  li .item_name {
     padding-top:20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size:1.333rem;
     font-weight:700;
 }
-.sub  li .pay  {
+.items .sub li .pay  {
     padding-top:20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size:1.333rem;
+    font-weight:500;
 }
