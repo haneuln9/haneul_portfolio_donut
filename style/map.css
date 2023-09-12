@@ -1,4 +1,5 @@
-h1 {
+.title_top_map h1 {
+    margin-top:80px;
     padding:100px 0;
     font-size:3.157rem;
     font-family: 'Noto Sans KR', sans-serif;
@@ -16,16 +17,17 @@ h1 {
     color:#FFF;
 }
 .map_choice a {
-    width:280px;
+    /* width:280px; */
+    font-family: 'Noto Sans KR', sans-serif;
     border:1px solid #aaa ;
-    margin:20px 30px 0 0;
-    font-size:2rem;
-    padding:10px 20px;
+    margin:20px 20px 0 0;
+    font-size:1.1rem;
+    padding:10px 57px;
 }
 .map_choice a:last-child {margin-right:0;}
 
 .line {
-    padding:50px 0;
+    padding:50px 0 50px 0;
 }
 .line span {
     display:block;
@@ -33,13 +35,18 @@ h1 {
     height:1px;
     background:#000;
 }
-
-#map {
-    /* background:aqua;
-    width:700px; margin:0 auto; height:500px; */
+.map_sub {margin-bottom:50px;}
+.map_sub p {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: none;
+    font-size:1.777rem;
+    text-align: center;
+    font-weight: 600px;
 }
-#map .map_img {
+.map_sub p:first-child {display:block;}
+#map {
     width:800px; height:500px; margin:0 auto;
     background:lightcoral;
-    margin-bottom:5px;
+    border:1px solid #aaa;
+    margin-bottom:50px;
 }

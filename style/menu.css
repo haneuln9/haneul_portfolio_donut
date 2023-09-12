@@ -1,5 +1,8 @@
-body {max-width:1380px; margin:0 auto;}
-h1 {
+body {margin:0 auto;
+}
+/* header{width: auto} */
+.title_top_menu h1 {
+    margin-top:80px;
     font-size:3.157rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight:700;
@@ -7,8 +10,9 @@ h1 {
     padding:100px 0;
 }
 .top_nav {
-    margin:0 auto;
+    margin-top:80px;
     display:flex;
+    justify-content: center;
     /* padding-top:50px; */
 }
 .top_nav > a {
@@ -29,36 +33,39 @@ h1 {
 }
 .line {
     padding:50px 0;
+    
 }
 .line span {
     display:block;
     width:1290px;
     height:1px;
     background:#000;
+    margin: 0 auto;
 }
-.items {
+.menu_items {
+    
+}
+.menu_items .menu_sub {
     margin:0 auto;
-}
-.items .sub {
     width:1380px;
     text-align: center;
     display:flex;
     flex-flow:row wrap;
 }
-.items .sub  li {
+.menu_items .menu_sub  li {
     padding: 0 20px 50px 20px ;
 }
-.items .sub  li .img {
+.menu_items .menu_sub  li .img {
     background:#F4F4F4;
 }
-.items .sub  li .img img  {}
-.items .sub  li .item_name {
+.menu_items .menu_sub  li .img img  {}
+.menu_items .menu_sub  li .item_name {
     padding-top:20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size:1.333rem;
     font-weight:700;
 }
-.items .sub li .pay  {
+.menu_items .menu_sub li .pay  {
     padding-top:20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-size:1.333rem;
